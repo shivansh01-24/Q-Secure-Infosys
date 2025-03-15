@@ -1,25 +1,27 @@
-import { useLocation } from "react-router-dom";
-import { useEffect } from "react";
+
+import React from "react";
+import { ArrowLeft } from "lucide-react";
+import BlurCard from "@/components/BlurCard";
 
 const NotFound = () => {
-  const location = useLocation();
-
-  useEffect(() => {
-    console.error(
-      "404 Error: User attempted to access non-existent route:",
-      location.pathname
-    );
-  }, [location.pathname]);
-
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">404</h1>
-        <p className="text-xl text-gray-600 mb-4">Oops! Page not found</p>
-        <a href="/" className="text-blue-500 hover:text-blue-700 underline">
+    <div className="min-h-screen flex items-center justify-center bg-gray-50 p-6">
+      <BlurCard className="max-w-md w-full text-center p-8">
+        <div className="w-16 h-16 rounded-full bg-rain-teal/10 text-rain-teal flex items-center justify-center mx-auto mb-6">
+          404
+        </div>
+        <h1 className="text-2xl font-bold mb-2 text-rain-dark-blue">Page Not Found</h1>
+        <p className="text-gray-600 mb-6">
+          The page you're looking for doesn't exist or has been moved.
+        </p>
+        <a 
+          href="/" 
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-rain-teal hover:bg-rain-teal/10 transition-colors"
+        >
+          <ArrowLeft size={16} />
           Return to Home
         </a>
-      </div>
+      </BlurCard>
     </div>
   );
 };
