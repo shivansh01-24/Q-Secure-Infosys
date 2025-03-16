@@ -12,6 +12,9 @@ const Footer = () => {
               <span className="text-rain-teal font-medium">RAIN</span>
               <span className="text-[0.65em] align-top">™</span>
             </p>
+            <p className="text-xs text-gray-400 mt-1">
+              Real-time AI-driven threat INterceptor and NEUtralizer
+            </p>
           </div>
           
           <div className="flex items-center">

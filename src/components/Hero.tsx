@@ -22,7 +22,7 @@ const Hero = () => {
       <div className="container mx-auto px-6 z-10 text-center">
         <div className="max-w-3xl mx-auto">
           <div className="inline-block mb-3 px-3 py-1 rounded-full bg-rain-teal/10 text-rain-teal text-xs font-medium animate-fade-in">
-            Real-time AI-driven threat INterceptor
+            Real-time AI-driven threat INterceptor and NEUtralizer
           </div>
           
           <h1 className="mb-6 font-bold tracking-tight">
